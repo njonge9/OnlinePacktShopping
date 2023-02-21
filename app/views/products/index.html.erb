@@ -9,9 +9,9 @@
   <div class='row'>
   <% @products.each do |product| %>
 
-    <div class='col-12 col-sm-6 col-md-4 col-lg-3'>
+    <div class='col-12 col-sm-6 col-md-4 col-lg-3 row p-4' style='width: 50%'>
       <h2><%= product.name%></h2>
-      <img class='img-responsive' src=<%=asset_path product.featImage%>/>
+      <img class='rounded' width='300px' height='400px' src=<%=asset_path product.featImage%>/>
       <p><%= product.description%></p>
       <h4>Ksh<%= product.price%></h4>
       <%= link_to 'Show', product, class:'btn btn-primary'%>
